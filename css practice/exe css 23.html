@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table tr>th {
+      /* table > tr>th 는 안됨 후레자식 이유는 >표시가
+      자손 후손 중 자손 선택자 표시인데, 크롬에서 개발자
+      도구를 보면 자동으로 tbody라고 하는 table밑의
+      자손이 생겨버린다. 즉 table의 자손은 tbody가 되어서
+      그밖의 tr같은애한테 > 써봣자 오류나고 안되는 것이다. */
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>이름</th>
+      <th>광주</th>
+      <th>대구</th>
+      <th>오사카</th>
+      <th>하노이</th>
+    </tr>
+    <tr>
+      <td>윤</td>
+      <td>서울 사우스 코리안</td>
+    </tr>
+
+  </table>
+  
+</body>
+</html>

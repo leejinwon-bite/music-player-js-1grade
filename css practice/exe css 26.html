@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{overflow: hidden;}
+    li{
+      list-style: none;
+      /* list-style: none; 원래 list에는 까만 점이 붙는걸 없애는기능  */
+      float:  left; padding: 15px;
+    }
+    li:first-child{border-radius: 10px 0 0 10px;}
+    /* border-radius: 10px 0 0 10px;} 안에 숫자 4개 들어가는것은 각각 li안에 1~4의 둘레를 둥글게 만든다. */
+    li:last-child{border-radius: 0 10px 10px 0;}
+    li:nth-child(2n){background-color: rgb(136, 30, 11);}
+    /* nth-child(2n) 자손들중에 짝수 순서로 잇는 애새키들을 지정 */
+    li:nth-child(2n+1){background-color: forestgreen;}
+  </style>
+</head>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+</body>
+</html>

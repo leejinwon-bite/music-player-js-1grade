@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sex</title>
+</head>
+<body>
+    <script>
+        function getyoil(year, month, day){var yoil=['일요일',
+         '월요일', '화요일', '수요일', '목요일',
+          '금요일', '토요일'];
+          var date= new Date(year, month-1, day);
+return yoil[date.getDay()];
+        }
+        
+window.document.write('<p>'+'2024년 7월 7일은' +getyoil(2024, 7, 7)+'</p>');
+    
+        
+    </script>
+</body>
+</html>

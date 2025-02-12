@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 원래 style은 웹디자이너가 하는부분인데 인력 없으면 할 수도 잇어서 기본만 알아두면된다고 한다. */
+
+    body {margin: 0;}
+    /* 기본적으로 body는 여백을 가지는데 이를 0으로 지정 */
+
+    #header {
+      width: 800px; margin: 0 auto;
+      /* margin: 0 auto;이건 중앙에 콘탠츠를 자동으로 맞춘다는 기능, 아주 많이쓰임 */
+      background: red;
+    }
+    #wrap {
+      width: 800px; margin: 0 auto;
+      overflow: hidden;
+      /*overflow  부모가 자식보다 작아서 자식이 더크면 이부분을 어떻개 할지 처리하는 것이다.  */
+    }
+    #aside {
+      width: 200px; float: left;
+      /*float 많이쓰임, 왼쪽 혹은 오른쪽에 차례차례 배치 시키는 기능 마치 물에 둥둥 떠다니는 배가 한쪽에 몰리는ㄳ에 나온 이름인듯  */
+      background-color: blue;
+    }
+    #content {
+      width: 600px; float: left;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div id="header" style="display:block">
+    <h1>#header태그</h1>
+  </div>
+  <div id="wrap">
+    <div id="aside">
+      <!-- <div id="wrap">부모, <div id="aside">자식  -->
+      <h1>#aside태그</h1>
+    </div>
+  </div>
+  <div id="header">
+    <h1>#header태그</h1>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+    
+h1{color:red;}
+body{text-align: center;
+background-color:rgb(0, 0, 0)
+;}
+.appframe{
+    background-color:#ffffff;
+    width: 400px;
+   margin: auto;
+   padding: 10px;
+    border-radius: 10px;
+
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    border-left: solid 10px skyblue;
+    
+}
+li{
+    padding: 2px;
+    border-top: solid 2px pink;
+    cursor: pointer;
+}
+.active{
+    background-color: orange;
+    color: teal;
+}
+li:hover{
+    background-color: greenyellow;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>테스트 웹페이지</title>
+  </head>
+  <body>
+    <script>
+       function getYoil(year, month, day){
+        var yoil = ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'];
+		if(month < 0){
+			return '그런 달은 없습니다';
+		}
+        var date = new Date(year, month - 1, day);
+        return yoil[date.getDay()];
+      }
+
+     document.write('<p>1985년 -1월 10일은 ' + getYoil(1985, -1, 10) + '</p>');
+     document.write('<p>1985년 3월 10일은 ' + getYoil(1985, 3, 10) + '</p>');
+     document.write('<p>2001년 3월 10일은 ' + getYoil(2001, 3, 10) + '</p>');
+     document.write('<p>2018년 3월 10일은 ' + getYoil(2018, 3, 10) + '</p>');
+    </script>
+  </body>
+</html>
